@@ -130,6 +130,26 @@
                                                 <field name="NUM">100</field>
                                               </block>
                                             </value>
+                                            <next>
+                                              <block type="variables_set" id="252" inline="true">
+                                                <field name="VAR">Distance</field>
+                                                <value name="VALUE">
+                                                  <block type="math_arithmetic" id="253" inline="true">
+                                                    <field name="OP">MINUS</field>
+                                                    <value name="A">
+                                                      <block type="variables_get" id="254">
+                                                        <field name="VAR">Distance</field>
+                                                      </block>
+                                                    </value>
+                                                    <value name="B">
+                                                      <block type="math_number" id="255">
+                                                        <field name="NUM">1</field>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </next>
                                           </block>
                                         </next>
                                       </block>
